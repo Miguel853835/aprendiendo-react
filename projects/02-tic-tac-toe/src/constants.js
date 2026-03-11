@@ -3,7 +3,6 @@ export const turns = {
   x: '❌',
   o: '⚪'
 }
-
 // combinaciones ganadoras posibles, cada número representa la posición en el tablero
 export const winner_combos = [
   [0,1,2], // primera fila
