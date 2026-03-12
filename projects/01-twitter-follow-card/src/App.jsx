@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard.jsx'
-const users = [
+/* const users = [
     {
         name: "Miguel Ángel Durán",
         userName: "midudev",
@@ -22,16 +22,16 @@ const users = [
         userName: "TMChein",
         isFollowing: false
     }
-]   
+]    */
 export function App(){
-    /* const [isFollowing, setIsFollowing] = useState(false)
+    const [isFollowing, setIsFollowing] = useState(false)
     console.log("render with isFollowing:", isFollowing)
     const [name, setName] = useState("midudev") // Crea una variable de estado llamada name y una función setName para actualizarla y que React repinte el componente.
-    console.log("render with name:", name) */
+    console.log("render with name:", name) 
     return(
         <section className="App">
             {
-                users.map(user => {
+               /*  users.map(user => {
                     const {userName, name, isFollowing } = user
                     return (
                         <TwitterFollowCard
@@ -42,9 +42,9 @@ export function App(){
                         {name}
                         </TwitterFollowCard>
                     )
-                })
+                }) */
             }
-            {/* <TwitterFollowCard 
+            <TwitterFollowCard 
                 initialIsFollowing={isFollowing}
                 userName={name} 
                 //name="Miguel Ángel Durán"
@@ -59,7 +59,7 @@ export function App(){
             
             <button onClick={() => setName("pedromichel")}>
                 Cambiar nombre
-            </button> */}
+            </button> 
             
         </section>
     )
